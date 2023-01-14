@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div id="error"></div>
+    <form id="form" action="/" action="GET">
+      <div class="modal" id="modal">
+        <!-- HEADER -->
+        <div class="flex flex-col">
+          <div class="flex">
+            <div class="flex-auto"></div>
+            <div class="modal-close">&times;</div>
+          </div>
+          <div class="modal-title">Book a Free Consultation</div>
+        </div>
+        <!-- HEADER -->
+        <!-- FORM -->
+        <div class="modal-space">
+          <div class="modal-form">
+            <div class="modal-row">
+              <div class="modal-input1">
+                <input
+                  class="modal-input-box"
+                  type="text"
+                  id="caregiverName"
+                  name="caregiverName"
+                  placeholder="Caregiver Name"
+                />
+              </div>
+              <div class="modal-input1">
+                <input
+                  class="modal-input-box"
+                  type="email"
+                  id="email"
+                  placeholder="Email"
+                  name="email"
+                />
+              </div>
+              <div class="modal-input1">
+                <input
+                  class="modal-input-box"
+                  type="number"
+                  id="phoneNumber"
+                  placeholder="Phone"
+                  name="phoneNumber"
+                />
+              </div>
+            </div>
+            <div class="flex modal-row">
+              <textarea
+                class="modal-input-textarea"
+                id="primaryConcern"
+                name="primaryConcern"
+                placeholder="Primary concern"
+              ></textarea>
+            </div>
+          </div>
+          <div class="modal-form2">
+            <div class="modal-row2">
+              <div class="modal-input1">
+                <input
+                  class="modal-input-box"
+                  type="text"
+                  id="patientName"
+                  name="patientName"
+                  placeholder="Patient's Name"
+                />
+              </div>
+              <div class="modal-input1">
+                <input
+                  class="modal-input-box"
+                  type="number"
+                  id="patientAge"
+                  placeholder="Patient's Age"
+                  name="patientAge"
+                />
+              </div>
+            </div>
+            <div class="flex modal-row2">
+              <textarea
+                class="modal-input-textarea"
+                id="additionalMsg"
+                name="additionalMsg"
+                placeholder="Additional message"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+        <!-- FORM -->
+        <!-- BUTTON -->
+        <div class="modal-submit-btn">
+          <div class="flex submit-btn">
+            <button class="button" type="submit">Submit</button>
+          </div>
+        </div>
+        <!-- BUTTON  -->
+      </div>
+    </form>
+  </body>
+</html>
